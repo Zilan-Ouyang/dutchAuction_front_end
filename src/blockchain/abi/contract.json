@@ -1,0 +1,384 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "uid",
+				"type": "uint256"
+			},
+			{
+				"name": "_shares",
+				"type": "uint256"
+			},
+			{
+				"name": "_nonce",
+				"type": "uint256"
+			}
+		],
+		"name": "bidding",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "uid",
+				"type": "uint256"
+			}
+		],
+		"name": "deposit",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "uid",
+				"type": "uint256"
+			},
+			{
+				"name": "newNonce",
+				"type": "uint256"
+			},
+			{
+				"name": "_updatedShares",
+				"type": "uint256"
+			}
+		],
+		"name": "disputeBid",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "uid",
+				"type": "uint256"
+			},
+			{
+				"name": "_disputeDurationLength",
+				"type": "uint256"
+			},
+			{
+				"name": "_shares",
+				"type": "uint256"
+			},
+			{
+				"name": "_offerPrice",
+				"type": "uint256"
+			}
+		],
+		"name": "newAuction",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "uid",
+				"type": "uint256"
+			},
+			{
+				"name": "_price",
+				"type": "uint256"
+			}
+		],
+		"name": "setPrice",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "uid",
+				"type": "uint256"
+			},
+			{
+				"name": "_addr",
+				"type": "address"
+			},
+			{
+				"name": "message",
+				"type": "string"
+			},
+			{
+				"name": "v",
+				"type": "uint8"
+			},
+			{
+				"name": "r",
+				"type": "bytes32"
+			},
+			{
+				"name": "s",
+				"type": "bytes32"
+			}
+		],
+		"name": "transfer",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "_bidder",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "uid",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "currentState",
+				"type": "uint8"
+			},
+			{
+				"indexed": false,
+				"name": "numOfBidders",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "_value",
+				"type": "uint256"
+			}
+		],
+		"name": "Deposit",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "bidder",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "currentOfferPrice",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "shares",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "cumulatedShares",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "blockNumber",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "nonce",
+				"type": "uint256"
+			}
+		],
+		"name": "Bid",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "uid",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "_offerPrice",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "currentState",
+				"type": "uint8"
+			},
+			{
+				"indexed": false,
+				"name": "currentPriceState",
+				"type": "uint8"
+			}
+		],
+		"name": "CurrentPrice",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "totalPayment",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "backToSender",
+				"type": "uint256"
+			}
+		],
+		"name": "TransferPayment",
+		"type": "event"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "bid",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "depositAmount",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getBidders",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_addr",
+				"type": "address"
+			}
+		],
+		"name": "getBids",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "uid",
+				"type": "uint256"
+			}
+		],
+		"name": "getCurrentPrice",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_addr",
+				"type": "address"
+			}
+		],
+		"name": "getDeposit",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "Participants",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
