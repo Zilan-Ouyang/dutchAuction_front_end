@@ -2,21 +2,30 @@ import React, { Component } from 'react'
 import {Card, ListGroup, ListGroupItem, Button, InputGroup, FormControl, Row, Col } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSortNumericUpAlt, faPlus} from '@fortawesome/free-solid-svg-icons';
-export default class DisputeAuc extends Component {
-//uint256 uid, uint newNonce, uint _updatedShares
+class DisputeAuc extends Component {
+    constructor(props){
+        super(props);
+        this.state = { 
+            uid: props.uid,
+            name: props.name,
+            description: props.description,
+            shares: props.shares,
+            offerPrice: props.offerPrice,
+        };
+    }
     render() {
         return (
             <div>
                 <Card style={{ width: '18rem' }}>
                     <Card.Body>
-                        <Card.Title>Item Name:Ikea Bed Frame</Card.Title>
+                        <Card.Title>Item Name:{this.state.name}</Card.Title>
                         <Card.Text>
-                        Used for 3 years, bugs free, good condition.
+                        {this.state.description}
                         </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
-                        <ListGroupItem><Row><Col><h6>Units bidded:</h6></Col><Col>getBid function on smart contract</Col></Row></ListGroupItem>
-                        <ListGroupItem><Row><Col><h6>Final Price:</h6></Col><Col>2 eth</Col></Row></ListGroupItem>
+                        <ListGroupItem><Row><Col><h6>Units bidded:</h6></Col><Col>{this.state.shares}</Col></Row></ListGroupItem>
+                        <ListGroupItem><Row><Col><h6>Final Price:</h6></Col><Col>{this.state.offerPrice}</Col></Row></ListGroupItem>
                         <ListGroupItem>
                             <Row>
                                 <Col sm={6}>
@@ -64,3 +73,5 @@ export default class DisputeAuc extends Component {
         )
     }
 }
+
+export default DisputeAuc;

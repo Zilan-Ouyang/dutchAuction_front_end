@@ -9,10 +9,6 @@
 			{
 				"name": "_shares",
 				"type": "uint256"
-			},
-			{
-				"name": "_nonce",
-				"type": "uint256"
 			}
 		],
 		"name": "bidding",
@@ -112,26 +108,6 @@
 			{
 				"name": "uid",
 				"type": "uint256"
-			},
-			{
-				"name": "_addr",
-				"type": "address"
-			},
-			{
-				"name": "message",
-				"type": "string"
-			},
-			{
-				"name": "v",
-				"type": "uint8"
-			},
-			{
-				"name": "r",
-				"type": "bytes32"
-			},
-			{
-				"name": "s",
-				"type": "bytes32"
 			}
 		],
 		"name": "transfer",
@@ -198,11 +174,6 @@
 			{
 				"indexed": false,
 				"name": "blockNumber",
-				"type": "uint256"
-			},
-			{
-				"indexed": false,
-				"name": "nonce",
 				"type": "uint256"
 			}
 		],

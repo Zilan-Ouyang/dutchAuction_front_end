@@ -41,6 +41,7 @@ class CreateIpo extends Component {
         this.props.createAuction(auction);
         blockchain.newAuction(this.state.uid, this.state.disputeDurationLength, this.state.shares, this.state.offerPrice).then(res=>{
             console.log(res);
+            window.location.reload();
         })
     }
     handleChange(e){
