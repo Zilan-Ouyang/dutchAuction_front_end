@@ -40,3 +40,6 @@ It's deployed on Koven testnet: https://kovan.etherscan.io/address/0x5d06581705b
 ### Backend and Database
 We host all the data of the auctions information on firebase.
 There are functions for posting auction information, retrieving auction information, updating products unit and price. 
+
+### Slides
+https://slides.com/zilanouyang/deck/live#/
