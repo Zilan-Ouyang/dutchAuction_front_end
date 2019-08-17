@@ -26,6 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://zilan-ouyang.github.io/dutchAuction_front_end",
   "eslintConfig": {
     "extends": "react-app"
   },

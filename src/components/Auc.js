@@ -47,11 +47,7 @@ class CreateAuc extends Component {
             console.log(this.state.isDeposited)
         })
     }
-    // localStorage.setItem('assetName', this.state.asset);
-    //     localStorage.setItem('address', this.state.address);
-    //     localStorage.setItem('strikePrice', this.state.strikePrice);
-    //     localStorage.setItem('time', this.state.time);
-    //     localStorage.setItem('rate', this.state.rate);
+    
     handleClick2(e){
         e.preventDefault();
         blockchain.bidding(this.state.uid, this.state.units).then(res =>{
