@@ -3,6 +3,7 @@
 Dutch auction is a method for pricing shares (often in an initial public offering) whereby the price of the shares offered is lowered until there are enough bids to sell all shares. 
     
 The main goal of this Dutch auction project is to find the optimal price at which to sell a security. 
+
 ## Auxion 
 
 Auxion is the ultimate tool for people selling their stuff fast and securely. we host online dutch auction that users can access to it anywhere anytime either with their laptops or smart phones. It is more than just a used goods trading platform, it can also be used for pricing and selling IPO or ICO. And there's no middleman, the users can have fully control over their auctions! 
@@ -24,6 +25,10 @@ In order to have a full access to the features we offer, you need to log in with
 # As a buyer 
 
 1. You can find all the available products on bids channel. If you find something interests you, you need to make a deposit to the escrow wallet, and you can use that amount to make the bid. The money would stay in the escrow wallet safely until you decide to make the payment and finalize the deal. And the excess amount would be refunded to your own metamask wallet. 
+
+# Hosting
+
+http://auxion.surge.sh/auction
 
 ## More
 
