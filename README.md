@@ -6,7 +6,7 @@ Auxion is the ultimate tool for people selling their stuff fast and securely. we
 
 Dutch auction is a method for pricing shares (often in an initial public offering) whereby the price of the shares offered is lowered until there are enough bids to sell all shares. 
     
-The main goal of this Dutch auction project is to find the optimal price at which to sell a security. 
+The main goal of this Dutch auction project was to find the optimal price at which to sell a security. 
 
 
 ## Getting Started - the work flow 
@@ -19,7 +19,7 @@ In order to have a full access to the features we offer, you need to log in with
 
 2. After the auction being created, the auction would be alive on bids channel until the order is fullfilled, from there, you can change the price with just one click. 
 
-3. After the order has been fullfilled, the auction card would be automatically removed from bids channel, you will find it in dispution channel or settlement channel (you can find the tabs to those channels on your dashboard). 
+3. After the order has been fullfilled, the auction card would be automatically removed from bids channel, you will find it in disputation channel or settlement channel (you can find the tabs to those channels on your dashboard). 
 
 4. After customer make the payment to the order, the balance would transfer to your wallet automatically.
 
