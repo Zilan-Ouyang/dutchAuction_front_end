@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dutchAuction_front_end/precache-manifest.7f35175574b94e464fcebdc0065b7410.js"
+  "/dutchAuction_front_end/precache-manifest.df7de932b4fc3d16e1e1f75b0c35c399.js"
 );
 
 self.addEventListener('message', (event) => {
