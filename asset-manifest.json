@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dutchAuction_front_end/static/css/main.998f6d62.chunk.css",
+    "main.js": "/dutchAuction_front_end/static/js/main.d8e4417e.chunk.js",
+    "main.js.map": "/dutchAuction_front_end/static/js/main.d8e4417e.chunk.js.map",
+    "runtime~main.js": "/dutchAuction_front_end/static/js/runtime~main.c86372e9.js",
+    "runtime~main.js.map": "/dutchAuction_front_end/static/js/runtime~main.c86372e9.js.map",
+    "static/js/2.8fd6b33a.chunk.js": "/dutchAuction_front_end/static/js/2.8fd6b33a.chunk.js",
+    "static/js/2.8fd6b33a.chunk.js.map": "/dutchAuction_front_end/static/js/2.8fd6b33a.chunk.js.map",
+    "index.html": "/dutchAuction_front_end/index.html",
+    "precache-manifest.7f35175574b94e464fcebdc0065b7410.js": "/dutchAuction_front_end/precache-manifest.7f35175574b94e464fcebdc0065b7410.js",
+    "service-worker.js": "/dutchAuction_front_end/service-worker.js",
+    "static/css/main.998f6d62.chunk.css.map": "/dutchAuction_front_end/static/css/main.998f6d62.chunk.css.map"
+  }
+}
