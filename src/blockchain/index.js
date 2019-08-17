@@ -9,7 +9,7 @@ export default class BlockchainClient {
         window.ethereum.enable()
         this.provider = new ethers.providers.Web3Provider(window.web3.currentProvider)
         this.signer = this.provider.getSigner()
-        this.auctionContract = new ethers.Contract("0x93ffd6577bc6635230b92d5fe4efe9fbfc544c1d", ContractABI, this.signer)
+        this.auctionContract = new ethers.Contract("0x5d06581705b1dc823b36ed43d6a8aaf0bf1dea03", ContractABI, this.signer)
     }
 
     async newAuction(uid,disputeDurationLength, shares, offerPrice) {
